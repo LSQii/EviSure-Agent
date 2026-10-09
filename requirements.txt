@@ -1,0 +1,33 @@
+# Core numerical and video runtime
+numpy==1.26.4
+pillow==10.3.0
+opencv-python-headless==4.9.0.80
+decord==0.6.0
+ffmpeg-python
+tqdm==4.66.2
+
+# PyTorch stack; adjust CUDA wheels for the target machine when necessary
+torch==2.1.2
+torchvision==0.16.2
+torchaudio==2.1.2
+flash-attn==2.5.7
+accelerate>=0.29.1
+
+# LLaVA and Hugging Face models
+transformers @ git+https://github.com/huggingface/transformers.git@1c39974a4c4036fd641bc1191cc32799f85715a4
+huggingface-hub>=0.22.2
+safetensors>=0.4.3
+sentencepiece>=0.1.99
+einops>=0.6.1
+einops-exts>=0.0.4
+timm>=0.9.16
+open-clip-torch>=2.24.0
+av>=12.0.0
+requests>=2.31.0
+
+# Evidence tools
+easyocr
+faiss-cpu
+spacy==3.7.4
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+networkx>=3.2.1
